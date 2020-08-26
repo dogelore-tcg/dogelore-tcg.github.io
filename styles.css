@@ -1,0 +1,72 @@
+body {
+    background-color: rgb(255, 211, 182);
+    font-family: "Verdana", sans-serif;
+    font-size: 12px;
+    font-size-adjust: 16px;
+}
+h1 {
+    background-color: rgb(255, 162, 74);
+    color: white;
+    overflow: hidden;
+    padding: 24px 40px;
+    margin: 0; 
+}
+
+h2 {
+    background-color: rgb(224, 138, 57);
+    color: white;
+    padding: 24px 40px;
+    margin: 0;
+}
+
+h2 a {
+    color: white;
+}
+
+h3 {
+    background: rgb(255, 198, 160);
+    padding: 14px 14px;
+    display: block;
+    margin: 0;
+    line-height: 12px;
+}
+
+h4 {
+    background: rgb(255, 198, 160);
+    padding: 14px 14px;
+    display: block;
+    margin: 0;
+    line-height: 12px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(180, 90, 6);
+}
+
+li {
+    float: left;
+}
+
+li strong a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 24px;
+    text-decoration: none;
+}
+
+li strong a:hover {
+    background-color: rgb(143, 72, 6);
+}
+
+article {
+    background: rgb(255, 198, 160);
+    padding: 14px 14px;
+    display: block;
+    margin: 0;
+    line-height: 12px;
+}
