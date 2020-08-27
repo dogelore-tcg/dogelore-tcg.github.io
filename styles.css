@@ -4,10 +4,24 @@
     box-sizing: border-box;
 }
 
+/* Color Pallete:
+
+#2D3142 - Space Cadet
+#BFC0C0 - Silver
+#FFFFFF - White
+#EF8354 - Mandarin
+#4F5D75 - Independence
+
+*/
+
 body {
     height: 100vh;
-    background-color: #DBAD6A;
+    background-color: #ffffff;
     font-family: "Poppins", sans-serif;
+}
+
+.top-nav-bar {
+    background: #BFC0C0;
 }
 
 a,
@@ -15,8 +29,27 @@ button {
     font-family: "Poppins", sans-serif;
 }
 
-.top-nav-bar {
-    background: #D39C4A;
+.topmenu button:hover,
+.topmenu button:hover a {
+    background: #EF8354;
+    color: white;
+}
+
+.topmenu button {
+    margin-top: 10px;
+    background: #FFFFFF;
+    border: none;
+    color: #2D3142;
+    text-decoration: none;
+    font-size: 18px;
+    cursor: pointer;
+    padding: 10px 10px;
+    border-radius: 5px;
+}
+
+.topmenu a {
+    color: #2D3142;
+    text-decoration: none;
 }
 
 .top-nav-bar img {
@@ -25,7 +58,7 @@ button {
     margin-right: auto;
 }
 
-.dropdown {
+.topmenu {
     height: 10vh;
     display: flex;
     justify-content: space-around;
@@ -37,8 +70,19 @@ button {
     position: relative;
 }
 
-.info ul {
-    background: white;
+/*
+.info li {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+*/
+
+/* Deprecated button tag
+.topmenu button {
+    background: #CDEAC0;
     position: absolute;
     margin-top: 10px;
     width: 200px;
@@ -52,35 +96,9 @@ button {
     pointer-events: none;
     transform: translateY(-10px);
     transition: all 0.4s ease;
-}
+} */
 
-.info li {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.info li:hover {
-    background: #CF995F;
-}
-
-.info a {
-    color: black;
-    text-decoration: none;
-}
-
-.dropdown button, 
-.home {
-    background: none;
-    border: none;
-    color: #FAF8F0;
-    text-decoration: none;
-    font-size: 18px;
-    cursor: pointer;
-}
-
+/*
 .dropdown button:hover, .home:hover {
     color: #DACE95;
 }
@@ -89,4 +107,4 @@ button {
     opacity: 1;
     pointer-events: all;
     transform: translateY(10px);
-}
+} */
