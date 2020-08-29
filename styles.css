@@ -70,6 +70,7 @@ button {
     align-content: left;
     justify-content: left;
     font-size: 16px;
+    opacity: 1;
 }
 
 .bio-article {
