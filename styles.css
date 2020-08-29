@@ -58,6 +58,48 @@ button {
     margin-right: auto;
 }
 
+.dropdown {
+    display: flex;
+    background: #f0f0f0;
+    border: none;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-right: 10px;
+    width: 98%;
+    padding: 7px;
+    align-content: left;
+    justify-content: left;
+    font-size: 16px;
+}
+
+.bio-article {
+    display: flex;
+    background: #f5f5f5;
+    border: none;
+    margin-top: -10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    width: 98%;
+    font-size: 12px;
+    padding: 7px;
+    align-content: left;
+    justify-content: left;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-10px);
+}
+
+.bio-article li {
+    list-style: none;
+}
+
+.dropdown:focus + .bio-article {
+    opacity: 1;
+    transform: translateY(10px);
+    transition: all 0.4s ease;
+}
+
 .topmenu {
     height: 10vh;
     display: flex;
