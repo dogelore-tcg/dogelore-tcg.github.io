@@ -1,41 +1,58 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link
-        href="https://fonts.googleapis.com/css?family=Poppins"
-        rel="stylesheet"
-    />
-    <link rel="stylesheet" href="../styles.css" />
-    <title>Dogelore TCG</title>
-</head>
-<body>
-    <nav class="top-nav-bar">
-        <img src="../dogefighterslogo.png" width=50% height=50%>
-        <div class="topmenu">
-            <button><a href="./index.html">Home</a></button>
-            <button><a href="./game.html">Get The Game</a></button>
-            <button class="here"><a href="./bios.html">The Creators</a></button>
-            <button><a href="https://dogefighters.fandom.com" target="#">The TCG Wiki</a></button>
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+     <!--Import Materialize.css-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+      <!--Import Materialize.js-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+      <!--Import Roboto, my favourite Material font-->
+      <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <!--Discord embeds!-->
+      <meta property="og:type" content="dogelore-tcg.github.io">
+      <meta property="og:title" content="Dogelore: The TCG" />
+      <meta property="og:description" content="Dogelore: The TCG is an in-development card game for the popular subreddit, r/Dogelore." />
+      <meta property="og:url" content="dogelore-tcg.github.io" />
+      <meta property="og:image" content="https://lh3.googleusercontent.com/proxy/Skj0wgxDQDTK5D38yyX1ggC7hdtnvvi4XmKVJi1qF_A4wIhdcpYDG9sNDb7wzPQ1TbrR99ZxYLn-TPxL8juQ7ZqQdA29YYLt3vb6Aw8XKfqmoYLYDbY" />
+      <style>
+        #toast-container {
+         top: auto !important;
+         right: auto !important;
+         bottom: 10%;
+         left:7%;
+        }
+      </style>
+      
+    </head>
+
+    <body>
+     <div class="container">
+      <nav>
+        <div class="nav-wrapper">
+         <div class="col s6 offset-s6 brand-logo">
+          <a href="#">
+           <img src="https://dogelore-tcg.github.io/dogefighterslogo2.png" width="262px" height="28px"></img>
+          </a>
         </div>
-    </nav>
-
-    <article class="bio-article">
-        <ul>
-            <li><h2>The Programmers</h2></li>
-            <li><b>LividPhysics</b>: Our web designer, who is the creator and maintainer of this website.</li>
-            <li><b>endercat55</b>: Our team leader, responsible for keeping us on track. He's also one of the two game devs, the other being NullSense.</li>
-            <li><b>NullSense</b>: One of the game devs responsible for the game in Unity.</li>
-        </ul>
-    </article>
-
-    <article class="bio-article">
-        <ul>
-            <li><h2>The Musicians</h2></li>
-            <li><b>LividPhysics</b>: Along with being the resident web designer, Livid is also head of the music department.</li>
-        </ul>
-    </article>
+         <ul id="nav-mobile" class="right hide-on-med-and-down">
+           <li><a href="bios.html">Wiki</a></li>
+           <li><a href="#" onclick="M.toast({html: 'No download as of now, sorry!'})">Download</a></li>
+           <li><a href="bios.html">Developer Bio's</a></li>
+      </ul>
     </div>
-</body>
-</html>
+  </nav>
+      <div id="text">
+        <div class="section">
+            <h1>Designers</h1>
+            <p><b>Personita 2.0 (designer/artist)</b>: One of the most active people right now, he’s the creator of some subtypes like the paper subtype and the knights</p>
+         <div class="divider"></div>
+         <div class="section">
+         <div class="divider"></div>
+        </div>
+      </div>
+      </div>
+    </body>
+  </html>
