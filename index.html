@@ -1,9 +1,11 @@
-  <!DOCTYPE html>
-  <html>
-    <head>
+<!DOCTYPE html>
+<html>
+   <head>
+      <!--I won't regret putting jQuery here... heh.-->
+      <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
       <!--Import Google Icon Font-->
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-     <!--Import Materialize.css-->
+      <!--Import Materialize.css-->
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
       <!--Import Materialize.js-->
       <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
@@ -18,47 +20,77 @@
       <meta property="og:url" content="dogelore-tcg.github.io" />
       <meta property="og:image" content="https://lh3.googleusercontent.com/proxy/Skj0wgxDQDTK5D38yyX1ggC7hdtnvvi4XmKVJi1qF_A4wIhdcpYDG9sNDb7wzPQ1TbrR99ZxYLn-TPxL8juQ7ZqQdA29YYLt3vb6Aw8XKfqmoYLYDbY" />
       <style>
-        #toast-container {
+         #toast-container {
          top: auto !important;
          right: auto !important;
          bottom: 10%;
          left:7%;
-        }
+         }
       </style>
-      
-    </head>
+   </head>
+   <body class="#212121 grey darken-4">
+      <div class="container">
+         <nav>
+            <div class="nav-wrapper yellow darken-3">
+              <!--here's the start of the sidebar-->
+              <ul id="slide-out" class="sidenav">
+                 <li>
+                    <div class="user-view">
+                       <div class="background">
+                       </div>
+                       <a class="dogeclass" href="#user"><img width="260px" height="156px" src="unnamed.png"></a>
+                    </div>
+                 </li>
+                 <li><a href="https://dogelore-tcg.github.io/" class="waves-effect"><i class="material-icons">home</i>Home</a></li>
+                 <li><a href="#!" class="subheader"><i class="material-icons">get_app</i>Download</a></li>
+                 <li><a href="#!" class="subheader"><i class="material-icons">book</i>Wiki</a></li>
+                 <li><a href="https://dogelore-tcg.github.io/bios" class="waves-effect"><i class="material-icons">build</i>Developer Bio's</a></li>
+                 <li>
+              </ul>
+              <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+              <!--and heres the end-->
+               <div class="col s6 offset-s6 brand-logo ">
+                  <a href="#">
+                  <img src="https://dogelore-tcg.github.io/dogefighterslogo2.png" width="262px" height="28px"></img>
+                  </a>
+               </div>
+               <ul id="nav-mobile" class="right hide-on-med-and-down">
+                  <li><a href="bios.html">Wiki</a></li>
+                  <li><a href="#" onclick="M.toast({html: 'No download as of now, sorry!'})">Download</a></li>
+                  <li><a href="bios.html">Developer Bio's</a></li>
+               </ul>
+            </div>
+         </nav>
+         <script>
+            $(document).ready(function(){
+              $('.sidenav').sidenav();
+            });
+         </script>
 
-    <body>
-     <div class="container">
-      <nav>
-        <div class="nav-wrapper">
-         <div class="col s6 offset-s6 brand-logo">
-          <a href="#">
-           <img src="https://dogelore-tcg.github.io/dogefighterslogo2.png" width="262px" height="28px"></img>
-          </a>
-        </div>
-         <ul id="nav-mobile" class="right hide-on-med-and-down">
-           <li><a href="bios.html">Wiki</a></li>
-           <li><a href="#" onclick="M.toast({html: 'No download as of now, sorry!'})">Download</a></li>
-           <li><a href="bios.html">Developer Bios</a></li>
-      </ul>
-    </div>
-  </nav>
-      <div id="text">
-        <div class="section">
-        <h5>Introduction</h5>
-        <p>Welcome to the website for Dogefighters: The Dogelore TCG!<br>
-        Here you can download the game, read some bios made by the developers about themselves or read some other articles talking about the game like this one.</p>
-         <div class="divider"></div>
-         <div class="section">
-        <h5>Download</h5>
-        <p>Sorry about this, but we don't have a download right now.</p>
-         <div class="divider"></div>
-        <h5>Wiki</h5>
-        <p>As the game is not released currently, we don't have a wiki yet.</p>
-        </div>
+        <!--THIS IS THE END OF THE NAVBAR AND SHIT, CONTINUE ON-->
+
+         <div class="grey-text text-lighten-3">
+            <div class="section">
+               <h4>Designers</h4>
+               <p><b>Personita 2.0 (designer/artist)</b>: One of the most active people right now, he’s the creator of some subtypes like the paper subtype and the knights</p>
+               <p><b>Roboitor (Artist, Designer):</b>: Joined the project early, and he has worked in multiple fields. Design, artist, and moving into music design. They try their hardest to contribute anything they can.</p>
+               <p><b>Katanaboi1 (Artist/Designer):</b>: Self taught artist and hard worker, typically works alone on the design of cards, but helps when needed.</p>
+            </div>
+            <div class="divider"></div>
+            <div class="section">
+               <h4>Programmers</h4>
+               <p><b>Robot (gameplay dev, the person making the website, head of cooky and designer):</b> I joined late into the project, quickly climbed up the ranks to become the person designing some cards, checking other people’s cards and making this very website! That’s me!</p>
+            </div>
+            <div class="divider"></div>
+            <div class="section">
+               <h4>Owners</h4>
+               <p><b>Rainbowshulkerbox (CEO, head of design):</b> Despite not actually doing much scripting/coding, Rainbowshulkerbox is the owner of this game, and is also head of design.</p>
+               <div class="divider"></div>
+            </div>
+         </div>
       </div>
       </div>
-    </body>
-  </html>
-        
+      </div>
+   </body>
+</html>
+<!--i swear to fucking god i will kill fucking materializecss because of this fucking text color-->
