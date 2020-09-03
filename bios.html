@@ -26,12 +26,23 @@
          bottom: 10%;
          left:7%;
          }
+         body::-webkit-scrollbar {
+         width: 6px;               /* width of the entire scrollbar */
+         }
+         body::-webkit-scrollbar-track {
+         background: #424242;        /* color of the tracking area */
+         }
+         body::-webkit-scrollbar-thumb {
+         background-color: #616161;    /* color of the scroll thumb */
+         border-radius: 20px;       /* roundness of the scroll thumb */
+         border: 2px solid #9e9e9e;  /* creates padding around scroll thumb */
+         }
       </style>
    </head>
    <body class="#212121 grey darken-4">
       <div class="container">
-         <nav>
-            <div class="nav-wrapper yellow darken-3">
+        <nav>
+           <div class="nav-wrapper yellow darken-3">
               <!--here's the start of the sidebar-->
               <ul id="slide-out" class="sidenav">
                  <li>
@@ -49,26 +60,25 @@
               </ul>
               <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
               <!--and heres the end-->
-               <div class="col s6 offset-s6 brand-logo ">
-                  <a href="#">
-                  <img src="https://dogelore-tcg.github.io/dogefighterslogo2.png" width="262px" height="28px"></img>
-                  </a>
-               </div>
-               <ul id="nav-mobile" class="right hide-on-med-and-down">
-                  <li><a href="bios.html">Wiki</a></li>
-                  <li><a href="#" onclick="M.toast({html: 'No download as of now, sorry!'})">Download</a></li>
-                  <li><a href="bios.html">Developer Bio's</a></li>
-               </ul>
-            </div>
-         </nav>
-         <script>
-            $(document).ready(function(){
-              $('.sidenav').sidenav();
-            });
-         </script>
-
-        <!--THIS IS THE END OF THE NAVBAR AND SHIT, CONTINUE ON-->
-
+              <div class="col s6 offset-s6 brand-logo ">
+                 <a href="https://dogelore-tcg.github.io/">
+                 <img src="https://dogelore-tcg.github.io/dogefighterslogo2.png" width="262px" height="28px"></img>
+                 </a>
+              </div>
+              <ul id="nav-mobile" class="right hide-on-med-and-down">
+                 <li><a href="https://dogelore-tcg.github.io/">Home</a></li>
+                 <li><a href="#" onclick="M.toast({html: 'Sorry, but we have no wiki as of now.'})">Wiki</a></li>
+                 <li><a href="download.html">Download</a></li>
+                 <li><a href="#">Developer Bio's</a></li>
+              </ul>
+           </div>
+        </nav>
+        <script>
+           $(document).ready(function(){
+             $('.sidenav').sidenav();
+           });
+        </script>
+         <!--THIS IS THE END OF THE NAVBAR AND SHIT, CONTINUE ON-->
          <div class="grey-text text-lighten-3">
             <div class="section">
                <h4>Designers</h4>
